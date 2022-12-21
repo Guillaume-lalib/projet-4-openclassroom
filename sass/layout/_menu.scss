@@ -1,0 +1,135 @@
+.section-img {
+  max-width: 100%;
+  max-height: 515px;
+  width: 100%;
+  object-fit: cover;
+}
+.menu {
+  margin: 0px auto -45px;
+  background-color: $color-back-1;
+  padding: 30px 0px 30px 0px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  top: -45px;
+  max-width: 1055px;
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .title {
+    margin-right: 55px;
+    font-size: 1.5rem;
+    font-family: Shrikhand;
+    letter-spacing: 2px;
+  }
+  .fa-like {
+    position: relative;
+    right: 26px;
+  }
+  .fa-heart {
+    display: flex;
+    align-items: center;
+  }
+}
+.menu-list {
+  max-width: 640px;
+  margin: 0px auto;
+  padding: 0px 20px;
+  h3 {
+    margin: 40px 0px 5px 0px;
+  }
+  .border {
+    &::after {
+      content: "";
+      z-index: 10;
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background: $color-bg;
+    }
+  }
+}
+.menu-card:nth-child(1) {
+  animation-delay: 0s;
+}
+.menu-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.menu-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.menu-card:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.menu-card:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.menu-card {
+  display: flex;
+  cursor: pointer;
+  margin: 20px 0px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 2px 20px 0 rgba(0, 0, 0, 0.2);
+  animation: menu-opacity 1s forwards;
+  opacity: 0;
+  &:hover {
+    .selection {
+      opacity: 1;
+      width: 65px;
+      .fa-circle-check {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+    }
+  }
+  .menu-infos {
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    .menu-text {
+      overflow: hidden;
+      white-space: nowrap;
+      p,
+      h4 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+    .price {
+      display: flex;
+      align-items: flex-end;
+      font-weight: 900;
+    }
+  }
+  .selection {
+    background: $color-bg;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    opacity: 0;
+    border-radius: 0px 15px 15px 0px;
+    transition: 0.5s;
+    .fa-circle-check {
+      font-size: 1.5rem;
+      opacity: 0;
+      transition: 0.5s;
+    }
+  }
+}
+.order {
+  padding-bottom: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background: $color-back-1;
+  max-width: 1055px;
+  .btn {
+    padding: 15px 50px;
+  }
+}

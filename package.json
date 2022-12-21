@@ -1,0 +1,13 @@
+{
+  "name": "projet",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./sass/style.scc",
+    "prefix": "postcss ./sass/style.scc --use autoprefixer -d ./sass/prefixer/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
